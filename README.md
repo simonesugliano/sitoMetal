@@ -1,5 +1,15 @@
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![MixItUp](https://img.shields.io/badge/MixItUp.js-lightgrey?style=for-the-badge)
+![Hosting](https://img.shields.io/badge/Hosting-333333?style=for-the-badge)
+![AlterVista](https://img.shields.io/badge/AlterVista-F58220?style=for-the-badge)
+
+
 # SitoMetal
 ## Sito Metal + E-commerce – Bootstrap 5 Project
+
 
 **Progetto web completo** sviluppato durante un corso di sviluppo frontend.  
 Un sito multi-pagina con layout responsive, sezioni tematiche e un **mini e-commerce funzionante** con filtri dinamici.
