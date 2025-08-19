@@ -3,7 +3,6 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![MixItUp](https://img.shields.io/badge/MixItUp.js-lightgrey?style=for-the-badge)
-![Hosting](https://img.shields.io/badge/Hosting-333333?style=for-the-badge)
 ![AlterVista](https://img.shields.io/badge/AlterVista-F58220?style=for-the-badge)
 
 
