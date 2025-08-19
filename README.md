@@ -1,7 +1,7 @@
-# sitoMetal
-# 💻 Sito Metal + E-commerce – Bootstrap 5 Project
+# SitoMetal
+## Sito Metal + E-commerce – Bootstrap 5 Project
 
-**Progetto web completo** sviluppato durante un corso base di frontend.  
+**Progetto web completo** sviluppato durante un corso di sviluppo frontend.  
 Un sito multi-pagina con layout responsive, sezioni tematiche e un **mini e-commerce funzionante** con filtri dinamici.
 
 > Primo progetto personale online, interamente costruito da zero.
