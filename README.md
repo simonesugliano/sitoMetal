@@ -7,69 +7,76 @@ Un sito multi-pagina con layout responsive, sezioni tematiche e un **mini e-comm
 > Primo progetto personale online, interamente costruito da zero.
 
 ---
+## Anteprima online
 
-## 🚀 Caratteristiche principali
+[**Vai al sito online**](http://supermegaprove.altervista.org)
 
-- ✅ Realizzato con **Bootstrap 5**
-- 🛒 **Pagina Shop con e-commerce funzionante**
-  - Sistema di filtri multipli con libreria **MixItUp**
-  - Layout responsive su tutte le card prodotto
-- 🧭 **Navbar, footer e caroselli** su più pagine
-- 📄 HTML, CSS e JS scritti a mano
-- 🎯 Pensato come esercizio reale, non solo accademico
+---
+## Caratteristiche principali
+
+- Realizzato con **Bootstrap 5**
+- **Pagina Shop con e-commerce funzionante**
+- Sistema di filtri multipli con libreria **MixItUp**
+- Layout responsive su tutte le card prodotto
+- **Navbar, footer e caroselli** su più pagine
+- Pensato come esercizio reale, non solo accademico
 
 ---
 
-## 📌 Struttura del sito
+## Struttura del sito
 
 | Pagina         | Funzione                                      |
 |----------------|-----------------------------------------------|
 | `index.html`   | Homepage introduttiva, creata durante il corso |
 | `shop.html`    | Mini e-commerce con filtri dinamici           |
-| `chisono.html` | Presentazione autore + contatti diretti       |
+| `chisono.html` | Presentazione autore + link ad altri lavori   |
 | `contatti.html`| Canali di comunicazione e mappa integrata     |
 | `style/`       | Fogli di stile personalizzati                 |
 | `img/`         | Immagini ottimizzate (WebP)                   |
 
 ---
 
-## 🌐 Anteprima online
 
-🔗 [**Vai al sito online**](http://supermegaprove.altervista.org)
-
----
 
 ## 🤓 Dietro le quinte
 
-Il progetto è nato **durante un corso base**, ma ha preso subito una strada personale:  
-mi sono messo a sperimentare, testare, modificare – spinto dalla voglia di imparare.
+Questo progetto è nato durante un corso base, quando ancora non sapevo bene dove mettere le mani.
+Ma dopo le prime righe, ho capito che non volevo solo replicare esercizi: volevo creare qualcosa di mio.
 
-La pagina `index.html` è la più grezza, perché è nata quando ancora stavo imparando come si scrive una classe.  
-Le altre pagine sono venute dopo, e si vede la differenza.
+La index.html è la prima pagina che ho scritto, quando ancora non sapevo cos’era una classe e ogni riga era un salto nel buio.
+È sporca, confusa, ma è vera. Le altre pagine sono venute dopo, quando cominciavo a capire meglio come funziona tutto questo mondo.
+Non sono perfette, ma raccontano un'evoluzione.
 
-> Il codice è imperfetto. Ma funziona. E dice molto più di mille righe pulite copiate da uno snippet.
+Ho abbandonato quasi subito la traccia del corso per fare di testa mia.
+A volte a naso, a volte sbattendo la testa, ma sempre col desiderio di capire davvero cosa stavo facendo.
 
+Il codice è incasinato, lo so. Ma è mio.
+Ed è pieno di tentativi, correzioni, bestemmie, soddisfazioni e voglia di fare.
+È il mio primo progetto, e funziona.
+Per me, questo è già tantissimo.
+
+> Non è solo codice. È un pezzo del mio percorso. E vale più di mille righe copiate bene ma sentite zero.
 ---
 
 ## 📎 Link utili
 
-- [💼 Il mio CV online](https://sitocv.altervista.org)
-- [🌍 Il mio sito WordPress](https://supermegaprovesito.altervista.org)
-- [📸 Landing page WP](https://paginaprova.altervista.org)
+- [Il mio CV online](https://sitocv.altervista.org)
+- [Il mio sito WordPress](https://supermegaprovesito.altervista.org)
+- [Landing page WP](https://paginaprova.altervista.org)
 
 ---
 
-## 👤 Autore
+## Autore
 
 **Simone Sugliano**  
-📧 1988simonesugliano@libero.it  
-📱 392 3688757  
-[🔗 GitHub](https://github.com/simonesugliano)  
-[🔗 LinkedIn](https://www.linkedin.com/in/simone-sugliano-95388022b/)
+1988simonesugliano@libero.it  
+392 3688757  
+[GitHub](https://github.com/simonesugliano)  
+[LinkedIn](https://www.linkedin.com/in/simone-sugliano-95388022b/)
 
 ---
 
-## 🛠️ Tecnologie usate
+## Tecnologie usate
 
 - HTML5
 - CSS3
@@ -79,14 +86,21 @@ Le altre pagine sono venute dopo, e si vede la differenza.
 
 ---
 
-## ⚠️ Disclaimer
+## Disclaimer
 
-Questo progetto è pensato come primo portfolio reale.  
-Il codice non è perfetto, ma è stato scritto **con criterio, impegno e voglia di migliorare.**
+Questo progetto è nato come primo portfolio reale, il primo spazio dove provare a raccontare davvero cosa so fare.
+Il codice non è perfetto, e non finge di esserlo.
+Ma è stato scritto con criterio, con impegno, e spesso con qualche imprecazione urlata contro lo schermo.
+
+Ogni sezione, ogni pagina, ogni funzione è frutto di ore passate a sbagliare, capire, riscrivere, provare di nuovo.
+A volte ci ho preso al primo colpo, altre volte no — ma non ho mai mollato.
+
+Quello che vedi qui dentro non è solo un sito:
+è una prova concreta che posso imparare qualsiasi cosa, se ci metto la testa, le mani… e sì, anche qualche imprecazione.
 
 ---
 
-## 📢 Feedback benvenuti!
+## Feedback benvenuti!
 
 Se sei arrivato fin qui, grazie.  
 Qualsiasi consiglio, correzione o suggerimento è più che ben accetto!
