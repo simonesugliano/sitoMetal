@@ -1,0 +1,392 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset per vecchi browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;/*evita sovrapposizioni*/
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+    background-color: rgba(172, 212, 212, 0.445);
+    bs-navbar-brand-color: rgb(229 8 8 / 90%);
+    background-image: url(../img/acciaio.jpg);
+    background-repeat: no-repeat;/*PIAZZA LA FOTO E NON LA RIPETE, MA IL SITO NON PUò ESSERE PIù LUNGA DELLA FOTO*/
+    background-size: cover; /*ALLARGA TANTISSIMO LA FOTO ,TANTO DA COPRIRE TUTTO IL SITO*/
+    background-attachment: fixed;/* FISSA LO SFONDO. IL CENTRO SCENDE MA LO SFONDO NON SI MUOVE*/
+        background-color: rgba(255, 255, 255, 0.463); /* layer di colore */
+  background-blend-mode: lighten; /* prova anche multiply, overlay */
+
+/*SOPRA--PARTE DI CODICE COMMENTATO, CHE SERVE PER METTERE SFONDO "DINAMICO" SUL BODY*/
+}
+
+
+/*.container{
+    max-width: 30%;
+}*/
+.logo{
+    position:absolute;
+    z-index: 999;
+    margin-left:20%;
+    margin-right: 20%;
+
+}
+
+/*.navbar{
+    position:fixed!important;
+    margin-top:0;
+    z-index: 1;
+    width: 100%;
+}*//*comandi per fissare la navbar in cima quando scrolli. controllare bane*/
+
+.navbar-brand{/*queste classi le trovo esaminando la pagina, con ispeziona e puntatore*/
+
+    --bs-navbar-brand-font-size:1.5rem;
+    --bs-navbar-brand-color: rgba(114, 11, 11, 0.9);
+    --bs-navbar-brand-hover-color: rgba(172, 212, 212, 0.445);
+}
+.nav-link{
+    --bs-nav-link-font-weight: bold;
+    --bs-nav-link-color: rgba(114, 11, 11, 0.9);
+    --bs-nav-link-hover-color: rgba(172, 212, 212, 0.445);
+    --bs-nav-link-disabled-color: green;
+    margin: 30px;
+}
+
+.navbar-active-color{
+    --bs-navbar-active-color: rgba(143, 11, 11, 0.74);
+}
+
+.dropdown-item{
+    font-weight: 900;
+    --bs-dropdown-color: rgba(143, 11, 11, 0.74);
+    font-weight: 900;
+    --bs-dropdown-link-color:  rgba(143, 11, 11, 0.74);
+    --bs-dropdown-link-hover-color: rgba(172, 212, 212, 0.445);
+    --bs-dropdown-link-hover-bg: #3f6a8dab;
+    
+}
+/*--titolo aggiunto----------------------------------------------------------------*/
+
+
+.img1{
+max-width: 100%;
+ height: 90%;
+padding-right: 30%;
+}
+
+h1{
+    text-align: center;
+    margin:5%;
+    font-size:2em;
+    font-weight: 900;
+    color:rgba(114, 11, 11, 0.9);
+
+}
+h2{
+    text-align: center;
+    margin:5%;
+    font-size:1.5em;
+    font-weight: 900;
+    color:rgba(114, 11, 11, 0.9);
+
+}
+
+
+/*--caroselllo----------------------------------------------------------------*/
+
+/*attenzione a modificare la dimensione delle foto senza tagliarle..*/
+/*dimensione del contenitore del carosello.. per togliere bordo ho abbassato l'altezza in px, così la foto copre bene tutto*/
+.carousel-inner{
+    height: auto !important;/*altezza la riduci a mano, sapendo la grandezza in cui l'hai scaricata*/
+    /*utile usare i px subito, ma per ridurre a telefono mettere auto, altrimenti rimane del mordo sotto che fa schifo..*/
+width: auto;/*adatta la larghezza all'altezza(o alla larghezza dello schermo.. da vedere)*/
+object-fit: contain;/*comando per spalmare l'immagine su tutto lo spazio disponibile*/
+}
+
+/*--griglie----------------------------------------------------------------*/
+
+#container-fluid{/*non serve specificare larghezza*/
+    height: auto;
+   
+    padding: 5px 0 5px 0;
+   
+}
+
+.row{
+    height:auto;
+    
+    width:auto;
+    margin:20px auto;
+}
+
+.col-md-4{
+    height: auto;
+    border: 0px solid gray;
+}
+.col-md-12{
+    height: auto;
+    background-color: #fff;
+    border: 5px solid rgb(0, 0, 0);
+     margin-bottom: 20px;
+     border-radius: 20px;
+}
+
+.card-equal-height {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-equal-height img {
+  object-fit: cover;
+  height: 25em; /* regola a piacere */
+}
+
+.card-body-equal {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/*--immagini dentro ai box----------------------------------------*/
+
+.img{
+    width: 70%;
+    height: 50%;
+    margin-left:  auto;
+    margin-right: auto;
+    position: relative;
+    margin:5%;
+}
+.chi, iframe{
+    height:250px;
+}
+.position-relative{
+    position: relative;
+}
+.mail{
+   display: flex;
+   justify-content: center;
+}
+.formInvioMail, #messaggio, .invioMail{
+    max-width: 100%;
+}
+.separatore{
+    height: 2vh;
+}
+.button{
+    position: absolute;
+    background-color: rgba(81, 3, 3, 0.775);
+    color: red;
+    border-radius: 40px;
+    left:50%;
+    top:90%;
+     transform: translate(-50%);
+     height: 9.5%;
+     width:30%;
+}
+
+
+
+.sp1{
+    color: rgba(111, 0, 255, 0.973);
+    font-size: 110%;
+    font-weight: 900;
+}
+
+.sp2{
+    color: rgba(0, 204, 255, 0.973);
+    font-size: 110%;
+    font-weight: 900;
+}
+
+.sp3{
+    color: rgba(229, 255, 0, 0.801);
+    font-size: 110%;
+    font-weight: 900;
+}
+
+
+p{
+    margin: 3% ;
+    color:rgb(4, 4, 3);
+    font-size: 1.5em;
+}
+
+.bg1{
+    background-color: rgba(220, 20, 60, 0.534);
+}
+
+.bg2{
+    background-color: rgba(210, 105, 30, 0.534);
+}
+
+.bg3{
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
+/*-------------------------------*/
+
+.col-md-6{
+    height: auto;
+    /*border: 2px solid red;*/
+    margin:0 auto
+}
+/*-------------------------------*/
+.contenitore{
+    max-width: 70%;
+    margin:0 auto;
+    line-height: 2em
+}
+
+/*------------ Footer-------------------*//* Footer */
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+    background: #007b5e00;
+  background-image: url(/img/pngtree-vector-flow-of-blood-png-image_3162927-removebg-preview.png);
+   background-repeat: no-repeat;        /* non ripete l’immagine */
+  background-position: center center; /* centra l’immagine */
+  background-size: cover;             /* scala per coprire tutto lo spazio */
+  padding:85px;
+}
+.imgfoot{
+    width: 100%;
+    height: 80%;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top:0;
+    padding:0;
+
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 0px solid wheat;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:rgb(59, 9, 9);
+    font-weight: 900;
+}
+#footer a {
+    color: #e20a0a;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:rgb(185, 99, 93);
+}
+#footer ul.social li a:hover{
+	color:#170200;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+    color: rgb(255, 0, 0);
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 900;
+    color: rgb(47, 0, 255);
+}
+
+.margintop{
+    margin-top: 20%;
+}
+
+.carousel-inner1{
+    height: auto;/*altezza la riduci a mano, sapendo la grandezza in cui l'hai scaricata*/
+    /*utile usare i px subito, ma per ridurre a telefono mettere auto, altrimenti rimane del mordo sotto che fa schifo..*/
+width: auto;/*adatta la larghezza all'altezza(o alla larghezza dello schermo.. da vedere)*/
+object-fit: contain;/*comando per spalmare l'immagine su tutto lo spazio disponibile*/
+}
+
+.p2{
+    font-size: 200%;
+    color: #e20a0a;
+    font-weight: 900;
+    text-align: center;
+}
+#footer a, #footer h5{
+    color:black !important;
+    font-size:1.3em
+}
+#footer a:hover{
+    color:rgb(183, 27, 92) !important;
+}
+.col-md-6{
+    margin-top: 5%;
+}
+
