@@ -6,7 +6,7 @@
 
 ---
 
-[Visita il codice Bootstrap ](/codice/mixitup)
+[Visita il codice mixitup ](/codice/mixitup)
 
 ---
 
