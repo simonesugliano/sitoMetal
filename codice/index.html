@@ -1,0 +1,384 @@
+<!-- documento iniziale direttamente copiato da bootstrap, https://bootstrap21.org/it/docs/5.2/getting-started/introduction/ link alla pagina
+<!doctype html>
+<html lang="it-IT">
+<!--quamdo il sito tradurrà, leggendo questo codice, lo farà con meno errori possibile. La doppia dichiarazoine è perchè c'è un altro stato che usa it, così in questo modo non ci sono errori-->
+
+<head>
+  <meta charset="utf-8">
+  <!--html inventato per la guerra(codificato e veloce) in inglese, quando trasportato in civile mettere questa riga fa riconoscere al computer tutti i caratteri ,accenti,ecc..ora integrato in browser, ma conviene metterlo -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--per dimensione schermo,da una scalabilita al contenuto, con classe @-->
+  <title> prog Bootst site metal </title>
+  <!--css bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- mio css-->
+  <link rel="stylesheet" href="/style/index.css" class="logo">
+
+
+  <script>
+    function visualizza_messaggio() {
+window.alert("Lo so bene: questa pagina non è perfetta. È grezza, incasinata, fatta di tentativi, bestemmie e test..tanti test, ma è mia! Ho iniziato con la Home durante il corso, completamente da zero, mentre ancora stavo cercando di capire come si scrive una classe. Le pagine secondarie sono venute dopo, man mano che imparavo qualcosa in più. Non sono perfette nemmeno loro, ma si vede che ho fatto passi avanti. Ho quasi subito abbandonato la direzione imposta per sperimentare per conto mio, 'a naso', spinto più dalla voglia di fare che dalle conoscenze reali. Il codice è sporco, disordinato, ma è vivo. E per essere il mio primo progetto completo... funziona! E-commerce incluso, eh: fatto tutto da me, tra mille santi invocati. Dentro ci trovi errori, miglioramenti, sudore, frustrazione, e un bel po’ di metallo pesante. Se ti strappa un sorriso o ti incuriosisce, ho già vinto. Buona visita, Sventurato Viandante… e un consiglio: nella Home, clicca tutto. Scritte, foto, pulsanti... non si sa mai.");
+    }
+  </script>
+
+
+  <!--SSE INVECE DECIDO DI SCARICARE I FILE, L'INIZIO POSSO FARLO SEMPLICEMENTE CON L'ESCLAMATIVO, DANDO POI IL LINK ALLA CARTELLA CHE HO SCARICATO, SCEGLIENDO IL FILE GIUSTO DA COLLEGARE TRA QUELLI SCARICATI
+    PER IL DISCORSO JS, LA STESSA COSA, MA NON CON UN LINK, BENSì CON UN TAG SCRIPT, VISTO CHE LI HO SALVATI SUL PC.
+    SVANTAGGIOSO IN TERMINI DI PESO SUL PC..-->
+  <!-- inizio documento-->
+</head>
+<!-- <img src="./progetto bootstrap/img/logo_corvo-removebg-preview.png" alt="kk" width="200">-->
+
+<body>
+
+
+
+
+  <!-- NAV BAR-->
+  <nav class="navbar navbar-expand-lg bg-light"><!--se sostituisco light con dark viene scura-->
+    <div class="container"><!--con -fluid dopo container non viene contenuto, rimane più ai bordi-->
+      <a href="https://www.linkedin.com/in/simone-sugliano-95388022b/" target="_blank"><img src="/img/logo_corvo-removebg-preview.png" alt="kk"
+          width="60"></a>
+      <a class="navbar-brand"
+        href="https://www.linkedin.com/in/simone-sugliano-95388022b/"
+        target="_blank">Simone Sugliano</a>
+      <button type="button" onclick="visualizza_messaggio()">DISCLAIMER</button>
+      <!-- hamburger per visualizzazione cellulare-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html" >Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/html/chisono.html" target="_blank">Chi sono</a><!-- aggiungere link-->
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/html/shop.html" target="_blank">Shop</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servizi
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/html/corsoPogo.html" target="_blank">corso di pogo</a></li>
+              <hr class="dropdown-divider">
+
+              <li><a class="dropdown-item" href="/html/corsoHeadbanging.html" target="_blank">corso di headbanging</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/corsoGrowl.html" target="_blank">corso di growl</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/contatti.html" target="_blank">Contatti</a>
+          </li>
+        </ul>
+
+      </div>
+  </nav>
+  <!-- FINE NAV BAR-->
+  <div id="container-fluid"><!--classe necessaria per bootstrap-->
+
+    <div class="row"><!--classe necessaria per bootstrap-->
+
+
+      <div class="col-md-10">
+        <h1>Eventi, e-commerce e formazione Metal</h1> <br>
+      </div>
+      <div class="col-md-2">
+        <a href="https://c.tenor.com/ikFpsAQo2-IAAAAC/ko-knock.gif?msockid=5955cdcd451311f0bbc0bd19399d22d1.gif"
+          target="_blank">
+
+          <img class="img1" src="/img/mazza ultima.webp" alt=""> </a>
+      </div>
+    </div>
+  </div>
+  <!--carosello prima pagina-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+
+
+    <!-- indicatori di dimensioni delle foto-->
+    <div class="carousel-inner">
+
+      <!-- dove si caricano le immagini-->
+      <div class="carousel-item active">
+        <img src="/img/carosello (2).jpg" class="d-block w-100" alt="slip">
+      </div>
+
+      <div class="carousel-item">
+        <img src="/img/carosello (3).jpg" class="d-block w-100" alt="rock ' roll!!!">
+      </div>
+
+      <div class="carousel-item">
+        <img src="/img/carosello (4).jpg" class="d-block w-100" alt="rock ' roll!!!">
+      </div>
+
+    </div>
+
+    <!-- -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+
+    <!-- -->
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+
+  </div>
+
+
+  <!--fine carosello prima pagina-->
+
+  <!------------------------------------------------------------------------------------------->
+
+
+  <!--griglie FATTE A MANO, che si appoggiano a BOOTSTRAP-->
+
+  <div id="container-fluid"><!--classe necessaria per bootstrap-->
+
+    <!--AGGIUNGO TITOLO PER PROVA!!!!!-->
+
+    <h2>Conosci già i gruppi più cazzuti del mondo??</h2>
+
+    <div class="row"><!--classe necessaria per bootstrap-->
+
+      <div class="col-md-4"><!--definisce quante colonne principali vogliamo-->
+
+        <div class="col-md-12 position-relative bg1 card-equal-height"><!--PRIMO BOX-->
+          <img src="/img/Slipknot.png" alt="" class="img bg1">
+          <div>
+            <p><span class="sp1">VISITA IL SITO DEGLI SLIPKNOT!! </span><br>All'interno una fantastica selezione di
+              abbigliamento ed accessori per psicopatici antisociali come TE!!</p><br><br><br><br>
+          </div class="card-body card-body-equal">
+          <a href="https://slipknot1.com/" target="_blank">
+
+            <button class="button">VISITA</button></a>
+        </div><!--definisce quante colonne secondarie vogliamo. In questo caso sono 12,perchè non ci sono altre frammentazioni
+  nel caso in cui ne volessimo altre, dividere ancora e fare sempre lo stesso calcolo riferito al 12-->
+
+
+      </div><!--slipknot-->
+
+
+      <div class="col-md-4">
+        <div class="col-md-12 position-relative bg2 card-equal-height">
+          <img src="/img/motorhead-logo-removebg-preview.png" alt="" class="img bg2">
+          <div class="card-body card-body-equal">
+            <p><span class="sp2">VISITA IL SITO DEI MOTORHEAD!! </span><br>E' tutto perfettamente funzionante, tranne
+              la
+              sezione Anfetamine, in ristrutturazione.</p><br><br><br><br><br>
+          </div>
+          <a href="https://imotorhead.com/" target="_blank">
+            <button class="button">VISITA</button></a>
+        </div>
+      </div><!--motorhead-->
+
+
+
+
+      <div class="col-md-4">
+        <div class="col-md-12 position-relative bg3 card-equal-height">
+          <img src="/img/sepoltura.webp" alt="" class="img bg3">
+          <div class="card-body card-body-equal">
+            <p><span class="sp3">VISITA IL SITO DEI SEPOLTURA!! </span><br>Incredibilmente non abbiamo solo vestiti
+              eleganti..
+            </p><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+          <a href="https://www.sepultura.com.br/" target="_blank">
+
+            <button class="button">VISITA</button></a>
+          <button class="button">VISITA</button></a>
+
+        </div>
+      </div><!--sepoltura-->
+      <br><br>
+      <!---------------------------------------------------------------------------------------------------------------------------->
+      <!--ho cambiato il col-md-4 con un'altra suddivisione per prova..
+le impostazioni che visualizzo sono tutte stampate nel 12, quelli che effettivamente visualizzo-->
+
+      <div class="col-md-6">
+
+        <!-- Carosello personalizzato -->
+        <div id="portfolioCarousel" class="carousel slide portfolio-carousel" data-bs-ride="carousel">
+
+          <!-- Indicatori -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#portfolioCarousel" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+
+          <!-- Slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="/img/harley.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/vapore.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="/img/monopattino.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+          </div>
+
+          <!-- Controlli prev/next -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+
+        </div>
+
+      </div>
+      <!--fine Carosello personalizzato -->
+      <div>
+        <br><br>
+        <p class="p2">Qualsiasi mezzo è buono per venire a pogare!! Male che vada muori..</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!--fien griglie FATTE A MANO, che si appoggiano a BOOTSTRAP-->
+
+  <!------------------------------------------------------------------------------------------->
+
+
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container1">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <br>
+          <h5>Su di Me</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="https://github.com/simonesugliano" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>GitHub</a></li>
+            <li><a href="https://sitocv.altervista.org" target="_blank"><i class="fa fa-angle-double-right"></i>Il mioCv</a> </li>
+            <li><a href="https://supermegaprovesito.altervista.org" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>Il mio sito WordPress</a> </li>
+                  <li><a href="https://paginaprova.altervista.org"
+                target="_blank"><i class="fa fa-angle-double-right"></i>Landing page sito WordPress</a></li>
+            <li><a href="/html/shop.html" target="_blank"><i class="fa fa-angle-double-right"></i>Entra nello store</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5 class="margintop">Video importanti</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.youtube.com/results?search_query=slipknot+greatest+hits+album" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>Slipknot</a>
+            </li><br>
+            <li><a href="https://www.youtube.com/results?search_query=motorhead+greatest+hits+album" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>Motorhead</a></li><br>
+            <li><a href="https://www.youtube.com/results?search_query=sepoltura+greatest+hits+album" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>Sepoltura</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <br>
+          <h5>Eventi</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.ticketone.it/" target="_blank"><i class="fa fa-angle-double-right"></i>Concerti</a>
+            </li>
+            <li><a href="https://www.formazionepromethes.it/serial-killer-differenza-fra-organizzati-e-disorganizzati/"
+                target="_blank"><i class="fa fa-angle-double-right"></i>Omicidi organizzati</a></li>
+            <li><a href="https://www.harley-davidson.com/it/it/index.html?msockid=188078e5af61673a25386ef4ae166601"
+                target="_blank"><i class="fa fa-angle-double-right"></i>Raduni Harley</a></li>
+            <li><a href="https://it.wikipedia.org/wiki/Una_notte_da_leoni" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>Notti da leoni</a></li>
+            <li><a href="https://it.wikipedia.org/wiki/La_notte_del_giudizio_(serie_di_film)" target="_blank"
+                title="Design and developed by"><i class="fa fa-angle-double-right"></i>Notti del giudizio</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--  <div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div> -->
+  </section>
+  <!-- ./Footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html> 
