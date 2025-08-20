@@ -73,7 +73,7 @@ Per me, questo è già tantissimo.
 > Non è solo codice. È un pezzo del mio percorso. E vale più di mille righe copiate bene ma sentite zero.
 ---
 
-## 📎 Link utili
+## Link altri progetti
 
 - [Il mio CV online](https://sitocv.altervista.org)
 - [Il mio sito WordPress](https://supermegaprovesito.altervista.org)
