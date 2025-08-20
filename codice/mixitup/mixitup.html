@@ -1,0 +1,92 @@
+
+
+
+
+<!------------------------------------------------------------------------------------------------------------------blocco html mixitup-->
+
+<div class="d-flex justify-content-center gap-2 mb-4 flex-wrap" id="filter-buttons">
+  <button class="btn btn-secondary" data-filter="all">Tutti</button>
+  <button class="btn btn-outline-primary" data-filter=".slipknot">Slipknot</button>
+  <button class="btn btn-outline-success" data-filter=".motorhead">Motorhead</button>
+  <button class="btn btn-outline-warning" data-filter=".sepoltura">Sepoltura</button>
+</div>
+<!------------------------------------------------------------------------------------------------------------------ fine blocco html mixitup-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------- link alla libreria-->
+<script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+
+
+
+
+
+
+
+
+
+<!----------------------------------------------------------------------------------------------------------------- script personalizzato-->
+<script>
+// funzione che inizializza mixitup e gestisce i filtri multipli con i bottoni
+document.addEventListener('DOMContentLoaded', function () {
+  // qui attivo MixItUp sul contenitore #grid
+  const mixer = mixitup('#grid', {
+    selectors: {
+      target: '.mix' // gli elementi da filtrare sono quelli con classe .mix
+    },
+    animation: {
+      duration: 10 // durata animazione, molto veloce
+    }
+  });
+
+  // prendo tutti i bottoni dentro #filter-buttons
+  const buttons = document.querySelectorAll('#filter-buttons button');
+  let activeFilters = []; // qui salvo le categorie selezionate
+
+  // per ogni bottone aggiungo un click listener
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filterValue = btn.getAttribute('data-filter'); // es: ".metal"
+
+      if (filterValue === 'all') {
+        // se clicco "Tutti" resetta tutto
+        activeFilters = [];
+        buttons.forEach(b => b.classList.remove('btn-primary', 'active'));
+        btn.classList.add('btn-primary', 'active');
+        mixer.filter('all');
+      } else {
+        // attivo/disattivo il bottone
+        btn.classList.toggle('active');
+
+        if (btn.classList.contains('active')) {
+          // aggiungo il filtro alla lista attivi
+          activeFilters.push(filterValue);
+          btn.classList.add('btn-primary');
+        } else {
+          // tolgo il filtro se lo riclicco
+          activeFilters = activeFilters.filter(f => f !== filterValue);
+          btn.classList.remove('btn-primary');
+        }
+
+        if (activeFilters.length === 0) {
+          // se non c’è nessun filtro, mostra tutto
+          mixer.filter('all');
+          document.querySelector('[data-filter="all"]').classList.add('btn-primary', 'active');
+        } else {
+          // altrimenti applica i filtri multipli (es: ".metal, .rock")
+          document.querySelector('[data-filter="all"]').classList.remove('btn-primary', 'active');
+          mixer.filter(activeFilters.join(', ')); 
+        }
+      }
+    });
+  });
+});
