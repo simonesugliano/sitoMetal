@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-commerce</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/style/index.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <!-- NAV BAR-->
+  <nav class="navbar navbar-expand-lg bg-light"><!--se sostituisco light con dark viene scura-->
+    <div class="container"><!--con -fluid dopo container non viene contenuto, rimane più ai bordi-->
+      <a href="https://www.linkedin.com/in/simone-sugliano-95388022b/" target="_blank"><img
+          src="/img/logo_corvo-removebg-preview.png" alt="kk" width="60"></a>
+      <a class="navbar-brand"
+        href="https://www.linkedin.com/in/simone-sugliano-95388022b/"
+        target="_blank">Simone Sugliano</a>
+            <button type="button" onclick="visualizza_messaggio()">DISCLAIMER</button>
+      <!-- hamburger per visualizzazione cellulare-->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html" target="_blank">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/html/chisono.html" target="_blank">Chi sono</a><!-- aggiungere link-->
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/html/shop.html" >Shop</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servizi
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/html/corsoPogo.html" target="_blank">corso di pogo</a></li>
+              <hr class="dropdown-divider">
+
+              <li><a class="dropdown-item" href="/html/corsoHeadbanging.html" target="_blank">corso di headbanging</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="/html/corsoGrowl.html" target="_blank">corso di growl</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/html/contatti.html" target="_blank">Contatti</a><!-- aggiungere link-->
+          </li>
+        </ul>
+
+
+      </div>
+  </nav>
+
+  <!-------------------------------------------------------------------------------------------------------------------------------------------Carrello-->
+<section class="container content-section" id="shopping-cart"> 
+ <table class="table table-hover table-cart">
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>Price</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody class="cart-items">
+    
+     
+  </tbody>
+</table>
+
+    <div class="cart-total"> 
+      <strong class="cart-total-title">Total</strong>
+      <span  class="cart-total-price" style="text-align: right;">$0</span>
+    </div>
+ 
+
+    <div class="btn-purchase" style="margin-top: 10%;">
+      <button type="button"  class="btn btn-dark btn-purchase "><i class="fa-solid fa-cart-shopping " style="margin-right: 6%;"></i>ACQUISTA</button>
+    </div>
+
+</section>
+  <!------------------------------------------------------------------------------------------------------------------------------------------- Fien Carrello-->
+
+<div class="d-flex justify-content-center gap-2 mb-4 flex-wrap" id="filter-buttons">
+  <button class="btn btn-secondary" data-filter="all">Tutti</button>
+  <button class="btn btn-outline-primary" data-filter=".slipknot">Slipknot</button>
+  <button class="btn btn-outline-success" data-filter=".motorhead">Motorhead</button>
+  <button class="btn btn-outline-warning" data-filter=".sepoltura">Sepoltura</button>
+</div>
+
+
+      <!-- -------------------------------------------------------------------------------------------contenitore cards shop -->
+
+  <!-------------------------------------------------------------------------------------------------------- SHOP SECTION -->
+<div class="container py-5">
+<div id="grid" class="container-card d-flex flex-wrap justify-content-center">
+  
+  <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------prima rioga desktop -->
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 1 -->
+<div class="mix slipknot col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/t-shirt-slp.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Slipknot</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta ì'"
+        data-price="7.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 2  -->
+<div class="mix slipknot col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/t-shirt-slp.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Slipknot</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta 99"
+        data-price="3.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 3 -->
+<div class="mix slipknot col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/t-shirt-slp.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Slipknot</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta tr"
+        data-price="6.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 4 -->
+<div class="mix slipknot col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/t-shirt-slp.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Slipknot</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta yu"
+        data-price="200"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 5-->
+<div class="mix slipknot col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/t-shirt-slp.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Slipknot</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta uA8"
+        data-price="52"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 6 -->
+<div class="mix slipknot col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/t-shirt-slp.jpg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Slipknot</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta olop"
+        data-price="0.99"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------seconda rioga desktop -->
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 1 -->
+<div class="mix motorhead col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/motorheadMaglietta.png" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Motorhead</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta ì'66"
+        data-price="42.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 2  -->
+<div class="mix motorhead col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/motorheadMaglietta.png" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Motorhead</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta 99òl"
+        data-price="1.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 3 -->
+<div class="mix motorhead col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/motorheadMaglietta.png" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Motorhead</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta trd"
+        data-price="8.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 4 -->
+<div class="mix motorhead col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/motorheadMaglietta.png" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Motorhead</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta yua"
+        data-price="2.99"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 5-->
+<div class="mix motorhead col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/motorheadMaglietta.png" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Motorhead</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta uAv"
+        data-price="1.82"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 6 -->
+<div class="mix motorhead col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/motorheadMaglietta.png" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Motorhead</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta oloq"
+        data-price="280.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------terza rioga desktop -->
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 1 -->
+<div class="mix sepoltura col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/sepolturaMaglietta.jpeg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Sepoltura</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta ìw'"
+        data-price="92.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 2  -->
+<div class="mix sepoltura col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/sepolturaMaglietta.jpeg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Sepoltura</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta 9559"
+        data-price="12.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 3 -->
+<div class="mix sepoltura col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/sepolturaMaglietta.jpeg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Sepoltura</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta ter"
+        data-price="88.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 4 -->
+<div class="mix sepoltura col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/sepolturaMaglietta.jpeg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Sepoltura</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta yfu"
+        data-price="2.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 5-->
+<div class="mix sepoltura col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/sepolturaMaglietta.jpeg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Sepoltura</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta uvA"
+        data-price="1.2"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Card 6 -->
+<div class="mix sepoltura col-6 col-sm-4 col-md-3 col-lg-2 p-3">
+  <div class="card h-100 w-100 d-flex flex-column">
+    <img src="/img/sepolturaMaglietta.jpeg" class="card-img-top" alt="...">
+    <div class="card-body d-flex flex-column">
+      <p class="card-text">Tshirt Sepoltura</p>
+<button class="btn btn-danger mt-auto add-to-cart"
+        data-title="Maglietta olo"
+        data-price="120.00"
+        data-img="/img/t-shirt-slp.jpg"
+        data-stock="50"
+        data-sessionlimit="5"
+        data-sessioncount="0">
+  Aggiungi
+</button>
+ <!--quantita visibile--> 
+<p class="stock-info">Disponibili: <span class="stock-num">5</span></p>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+</div>
+    <!-- ---------------------------------------------------------------------------------------------------------------------------------------------------------------fine contenitore cards -->
+
+
+
+<!-------------------------------------------------------------------------------------------------------- Modale Acquisto -->
+<div class="modal fade" id="purchaseModal" tabindex="-1" aria-labelledby="purchaseModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="purchaseModalLabel">Acquisto completato</h5>
+      </div>
+      <div class="modal-body">
+        <p class="fs-5">😉 Grazie per il tuo acquisto!</p>
+        <p class="text-muted">Riceverai una conferma via email.</p>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------Modale carrello vuoto -->
+<div class="modal fade" id="empityModal" tabindex="-1" aria-labelledby="empityModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title" id="purchaseModalLabel">Impossibile procedere</h5>
+      </div>
+      <div class="modal-body">
+        <p class="fs-5">💀 Il tuo carrello è vuoto</p>
+        <p class="text-muted">Seleziona almeno un articolo per procedere</p>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Chiudi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-------------------------------------------------------------------------------------------------------- Footer -->
+  <!-- Footer -->
+  <section id="footer">
+    <div class="container1">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <br>
+          <h5>Su di Me</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="https://github.com/simonesugliano" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>GitHub</a></li>
+            <li><a href="https://sitocv.altervista.org" target="_blank"><i class="fa fa-angle-double-right"></i>Il mioCv</a> </li>
+            <li><a href="https://supermegaprovesito.altervista.org" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>Il mio sito WordPress</a> </li>
+                  <li><a href="https://paginaprova.altervista.org"
+                target="_blank"><i class="fa fa-angle-double-right"></i>Landing page sito WordPress</a></li>
+            <li><a href="shop.html"><i class="fa fa-angle-double-right"></i>Entra nello store</a></li>
+            
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5 class="margintop">Video importanti</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.youtube.com/results?search_query=slipknot+greatest+hits+album" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>Slipknot</a>
+            </li><br>
+            <li><a href="https://www.youtube.com/results?search_query=motorhead+greatest+hits+album" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>Motorhead</a></li><br>
+            <li><a href="https://www.youtube.com/results?search_query=sepoltura+greatest+hits+album" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>Sepoltura</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <br>
+          <h5>Eventi</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="https://www.ticketone.it/" target="_blank"><i class="fa fa-angle-double-right"></i>Concerti</a>
+            </li>
+            <li><a href="https://www.formazionepromethes.it/serial-killer-differenza-fra-organizzati-e-disorganizzati/"
+                target="_blank"><i class="fa fa-angle-double-right"></i>Omicidi organizzati</a></li>
+            <li><a href="https://www.harley-davidson.com/it/it/index.html?msockid=188078e5af61673a25386ef4ae166601"
+                target="_blank"><i class="fa fa-angle-double-right"></i>Raduni Harley</a></li>
+            <li><a href="https://it.wikipedia.org/wiki/Una_notte_da_leoni" target="_blank"><i
+                  class="fa fa-angle-double-right"></i>Notti da leoni</a></li>
+            <li><a href="https://it.wikipedia.org/wiki/La_notte_del_giudizio_(serie_di_film)" target="_blank"
+                title="Design and developed by"><i class="fa fa-angle-double-right"></i>Notti del giudizio</a></li>
+          </ul>
+        </div>
+      </div>
+      <!--  <div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div> -->
+  </section>
+  <!-- ./Footer -->
+    <!---------------------------------------------------------------------------------------------------- fineFooter -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/form.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+<script>
+// funzione che inizializza mixitup e gestisce i filtri multipli con i bottoni
+document.addEventListener('DOMContentLoaded', function () {
+  // qui attivo MixItUp sul contenitore #grid
+  const mixer = mixitup('#grid', {
+    selectors: {
+      target: '.mix' // gli elementi da filtrare sono quelli con classe .mix
+    },
+    animation: {
+      duration: 10 // durata animazione, molto veloce
+    }
+  });
+
+  // prendo tutti i bottoni dentro #filter-buttons
+  const buttons = document.querySelectorAll('#filter-buttons button');
+  let activeFilters = []; // qui salvo le categorie selezionate
+
+  // per ogni bottone aggiungo un click listener
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filterValue = btn.getAttribute('data-filter'); // es: ".metal"
+
+      if (filterValue === 'all') {
+        // se clicco "Tutti" resetta tutto
+        activeFilters = [];
+        buttons.forEach(b => b.classList.remove('btn-primary', 'active'));
+        btn.classList.add('btn-primary', 'active');
+        mixer.filter('all');
+      } else {
+        // attivo/disattivo il bottone
+        btn.classList.toggle('active');
+
+        if (btn.classList.contains('active')) {
+          // aggiungo il filtro alla lista attivi
+          activeFilters.push(filterValue);
+          btn.classList.add('btn-primary');
+        } else {
+          // tolgo il filtro se lo riclicco
+          activeFilters = activeFilters.filter(f => f !== filterValue);
+          btn.classList.remove('btn-primary');
+        }
+
+        if (activeFilters.length === 0) {
+          // se non c’è nessun filtro, mostra tutto
+          mixer.filter('all');
+          document.querySelector('[data-filter="all"]').classList.add('btn-primary', 'active');
+        } else {
+          // altrimenti applica i filtri multipli (es: ".metal, .rock")
+          document.querySelector('[data-filter="all"]').classList.remove('btn-primary', 'active');
+          mixer.filter(activeFilters.join(', ')); 
+        }
+      }
+    });
+  });
+});
+
+//funzione che mostra alert di spiegazione pagina quando viene premuto pulsate "disclaimer"
+       function visualizza_messaggio(){
+window.alert("In questa pagina ho realizzato una bozza di e-commerce,\ncon gestione del carrello e più tipologie di articoli,\nselezionabili e filtrabili tramite MixItUp.\n\nLa struttura riprende quella della Home,\ncostruita con Bootstrap e layout a colonne.\n\nIl codice del carrello è stato preso da GitHub e modificato per adattarlo al progetto.");
+}
+
+</script>
+
+
+</body>
+</html>
