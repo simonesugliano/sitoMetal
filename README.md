@@ -45,7 +45,13 @@ Un sito multi-pagina con layout responsive, sezioni tematiche e un **mini e-comm
 
 ---
 
+## ANTEPRIMA DEL SITO;  
 
+### Qui vedi l'impostazione della pagina e-commerce. <br><br>
+
+![Homepage del sito](/img/shop.png)
+
+---
 
 ## 🤓 Dietro le quinte
 
