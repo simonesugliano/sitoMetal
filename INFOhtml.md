@@ -1,4 +1,12 @@
-# HTML5  
+# HTML5 – Struttura semantica e organizzazione
+
+---
+
+[Visita il sito online](https://supermegaprove.altervista.org)
+
+---
+
+[Visita il codice HTML ](/codice/html)
 
 ---
 
