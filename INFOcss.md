@@ -2,7 +2,7 @@
 
 ---
 
-###Anche se il progetto si appoggia a Bootstrap, il CSS è stato il vero spazio creativo. Ho usato le classi base del framework per partire, ma poi ho personalizzato praticamente tutto: colori, spaziature, bordi, effetti al passaggio del mouse, ombre, transizioni… ogni elemento è stato ritoccato per farlo funzionare davvero come volevo.
+### Anche se il progetto si appoggia a Bootstrap, il CSS è stato il vero spazio creativo. Ho usato le classi base del framework per partire, ma poi ho personalizzato praticamente tutto: colori, spaziature, bordi, effetti al passaggio del mouse, ombre, transizioni… ogni elemento è stato ritoccato per farlo funzionare davvero come volevo.
 
 ---
 
